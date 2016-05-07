@@ -1,0 +1,351 @@
+/* Base Styles */
+
+  /* Clear Elements */
+
+  .group:before,  .group:after  {content:  "";  display:  table;}
+
+  .group:after  {clear:  both;}
+
+  .group  {zoom:  1;}
+
+  /* Set up REM style */
+
+  html  {font-size:  62.5%;}
+
+  body  {
+  	font-size:14px;
+  	font-size:1.4rem;
+  	background-color:#fff;
+	background-image:url(/elstonconsulting-co-uk/_img/website_bg-v2.png);
+  	background-repeat:no-repeat;
+	}
+
+
+/* Border Box */
+
+  *,  *:before,  *:after  {-webkit-box-sizing:  border-box; -moz-box-sizing:  border-box; box-sizing:  border-box;}
+
+
+/* Font Styles */
+
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('/ambicorpltd-co-uk/_img/fonts/OpenSans-Bold-webfont.eot');
+    src: url('/ambicorpltd-co-uk/_img/fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/ambicorpltd-co-uk/_img/fonts/OpenSans-Bold-webfont.woff') format('woff'),
+         url('/ambicorpltd-co-uk/_img/fonts/OpenSans-Bold-webfont.ttf') format('truetype'),
+         url('/ambicorpltd-co-uk/_img/fonts/OpenSans-Bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansbold_italic';
+    src: url('/ambicorpltd-co-uk/_img/fonts/OpenSans-BoldItalic-webfont.eot');
+    src: url('/ambicorpltd-co-uk/_img/fonts/OpenSans-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/ambicorpltd-co-uk/_img/fonts/OpenSans-BoldItalic-webfont.woff') format('woff'),
+         url('/ambicorpltd-co-uk/_img/fonts/OpenSans-BoldItalic-webfont.ttf') format('truetype'),
+         url('/ambicorpltd-co-uk/_img/fonts/OpenSans-BoldItalic-webfont.svg#open_sansbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansextrabold';
+    src: url('/ambicorpltd-co-uk/_img/fonts/OpenSans-ExtraBold-webfont.eot');
+    src: url('/ambicorpltd-co-uk/_img/fonts/OpenSans-ExtraBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/ambicorpltd-co-uk/_img/fonts/OpenSans-ExtraBold-webfont.woff') format('woff'),
+         url('/ambicorpltd-co-uk/_img/fonts/OpenSans-ExtraBold-webfont.ttf') format('truetype'),
+         url('/ambicorpltd-co-uk/_img/fonts/OpenSans-ExtraBold-webfont.svg#open_sansextrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansextrabold_italic';
+    src: url('/ambicorpltd-co-uk/_img/fonts/OpenSans-ExtraBoldItalic-webfont.eot');
+    src: url('/ambicorpltd-co-uk/_img/fonts/OpenSans-ExtraBoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/ambicorpltd-co-uk/_img/fonts/OpenSans-ExtraBoldItalic-webfont.woff') format('woff'),
+         url('/ambicorpltd-co-uk/_img/fonts/OpenSans-ExtraBoldItalic-webfont.ttf') format('truetype'),
+         url('/ambicorpltd-co-uk/_img/fonts/OpenSans-ExtraBoldItalic-webfont.svg#open_sansextrabold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansitalic';
+    src: url('/ambicorpltd-co-uk/_img/fonts/OpenSans-Italic-webfont.eot');
+    src: url('/ambicorpltd-co-uk/_img/fonts/OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/ambicorpltd-co-uk/_img/fonts/OpenSans-Italic-webfont.woff') format('woff'),
+         url('/ambicorpltd-co-uk/_img/fonts/OpenSans-Italic-webfont.ttf') format('truetype'),
+         url('/ambicorpltd-co-uk/_img/fonts/OpenSans-Italic-webfont.svg#open_sansitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('/ambicorpltd-co-uk/_img/fonts/OpenSans-Light-webfont.eot');
+    src: url('/ambicorpltd-co-uk/_img/fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/ambicorpltd-co-uk/_img/fonts/OpenSans-Light-webfont.woff') format('woff'),
+         url('/ambicorpltd-co-uk/_img/fonts/OpenSans-Light-webfont.ttf') format('truetype'),
+         url('/ambicorpltd-co-uk/_img/fonts/OpenSans-Light-webfont.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sanslight_italic';
+    src: url('/ambicorpltd-co-uk/_img/fonts/OpenSans-LightItalic-webfont.eot');
+    src: url('/ambicorpltd-co-uk/_img/fonts/OpenSans-LightItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/ambicorpltd-co-uk/_img/fonts/OpenSans-LightItalic-webfont.woff') format('woff'),
+         url('/ambicorpltd-co-uk/_img/fonts/OpenSans-LightItalic-webfont.ttf') format('truetype'),
+         url('/ambicorpltd-co-uk/_img/fonts/OpenSans-LightItalic-webfont.svg#open_sanslight_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('/ambicorpltd-co-uk/_img/fonts/OpenSans-Regular-webfont.eot');
+    src: url('/ambicorpltd-co-uk/_img/fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/ambicorpltd-co-uk/_img/fonts/OpenSans-Regular-webfont.woff') format('woff'),
+         url('/ambicorpltd-co-uk/_img/fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('/ambicorpltd-co-uk/_img/fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sanssemibold';
+    src: url('/ambicorpltd-co-uk/_img/fonts/OpenSans-Semibold-webfont.eot');
+    src: url('/ambicorpltd-co-uk/_img/fonts/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/ambicorpltd-co-uk/_img/fonts/OpenSans-Semibold-webfont.woff') format('woff'),
+         url('/ambicorpltd-co-uk/_img/fonts/OpenSans-Semibold-webfont.ttf') format('truetype'),
+         url('/ambicorpltd-co-uk/_img/fonts/OpenSans-Semibold-webfont.svg#open_sanssemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sanssemibold_italic';
+    src: url('/ambicorpltd-co-uk/_img/fonts/OpenSans-SemiboldItalic-webfont.eot');
+    src: url('/ambicorpltd-co-uk/_img/fonts/OpenSans-SemiboldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/ambicorpltd-co-uk/_img/fonts/OpenSans-SemiboldItalic-webfont.woff') format('woff'),
+         url('/ambicorpltd-co-uk/_img/fonts/OpenSans-SemiboldItalic-webfont.ttf') format('truetype'),
+         url('/ambicorpltd-co-uk/_img/fonts/OpenSans-SemiboldItalic-webfont.svg#open_sanssemibold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+h1 {font-family:calibri, sans-serif; font-weight: bold; font-style: normal; font-size: 26px;}
+
+h2 {font-family:calibri, sans-serif; font-weight: bold; font-style: normal; font-size: 17px;}
+
+h3 {font-family:calibri, sans-serif; font-weight: bold; font-style: normal; font-size: 17px;}
+
+h4 {font-family:calibri, sans-serif; font-weight: bold; font-style: normal; font-size: 15px;}
+
+h5 {font-family:calibri, sans-serif; font-weight: bold; font-style: normal; font-size: 14px;}
+
+p {color: #565656; font-family: calibri,sans-serif; font-size: 14px;}
+
+a {color: #565656; font-family: calibri,sans-serif; font-size: 14px;}
+
+ul li, ol li, li {color: #565656; font-family: calibri,sans-serif; font-size: 14px;}
+
+
+/* ====================== FONT ITEMS ============================== */
+
+
+/* Main Layout Styles */
+
+
+.header-bar {padding: 10px 0px; background: #fff; }
+
+/* Nav Bar */
+
+        .nav-bar {background: #fff;}
+
+        .slicknav_menu {display: none;}
+
+        .nav {display: table;  width: 100%; height: 80px;}
+
+        #menuMain {display: table-row; margin: 0px; width: 100%; padding-left: 0px; text-align: right; color: #565656;}
+
+        #menuMain>li { display: inline-block; /*width: 12.6%; */ margin: 0px 0px; height: 80px; list-style-type: none; position: relative;   }
+
+        #menuMain>li:after {content:" | ";font-family: Arial, Helvetica, sans-serif; font-size: 14px; text-decoration: none; font-weight: normal; color: #565656;}
+
+        #menuMain>li.liLinkActive, #menuMain>li:hover { }
+
+        #menuMain>li>a {font-family: Arial, Helvetica, sans-serif; font-size: 14px; text-decoration: none; font-weight: normal; color: #565656;}
+
+        #menuMain>li>a.linkActive {text-decoration: none;}
+
+        #menuMain>li>a:hover {text-decoration: underline;}
+
+        #menuMain>li>a:hover, .menu>li>a.linkActive {text-decoration: underline;}
+
+        #menuMain>li:hover>a { }
+
+        /* Dropdown LV1 */
+
+        #menuMain>li>ul {display: none; white-space:nowrap; list-style: none; text-decoration:none; margin: 0px;}
+
+
+
+
+a.verify {padding: 6px 10px 6px 10px; background: #97cf1f; border-radius: 5px; color: #fff; text-decoration: none; border: 1px solid #8cbd25; }
+
+a.verify:hover {padding: 6px 10px 6px 10px; background: #80ae1d; border-radius: 5px; color: #fff; text-decoration: none; border: 1px solid #8cbd25; }
+
+a.verifyReject {padding: 6px 10px 6px 10px; background: #d60e18; border-radius: 5px; color: #fff; text-decoration: none; border: 1px solid #b00811;}
+
+a.verifyReject:hover {padding: 6px 10px 6px 10px; background: #94080f; border-radius: 5px; color: #fff; text-decoration: none; border: 1px solid #b00811;}
+
+p.content {    color: #565656;
+    font-family: calibri,sans-serif;
+    font-size: 14px;}
+
+
+.contactForm {width: 560px; color: #fff; padding:20px ; background: #666666;}
+
+.error {display: none;}
+
+.fbElementVldMsg {width: 50%; float: left; color: #fff; text-align: right;}
+
+.fbElementTextLabel {width: 50%; float: left; color: #fff;}
+
+.fbElementParaLabel {width: 50%; float: left; color: #fff;}
+
+.fbElementText {width: 540px !important;}
+
+.fbElementPara {width: 540px !important;}
+
+.fbSortable {width: 540px;}
+
+
+
+.footer {width: 980px; height: 30px; padding-top: 10px; margin-left: auto; margin-right: auto; text-align: center; color: #; }
+
+
+.disclaimer, .content-box {margin-bottom: 50px;}
+
+
+
+
+.termsBox {width: 100%; height: 220px; padding: 15px; margin: 15px 0px;  overflow-y: scroll; background:#e6e6e6 ; border: 1px solid #7b7b7b ; color: #565656; font-family: calibri,sans-serif; font-size: 14px; }
+
+
+#confirm.feature input#confirmButton {padding: 6px 10px 6px 10px; background: #97cf1f; border-radius: 5px; color: #fff; text-decoration: none; border: 1px solid #8cbd25; }
+
+#confirm.feature input#confirmButton:hover {padding: 6px 10px 6px 10px; background: #80ae1d; border-radius: 5px; color: #fff; text-decoration: none; border: 1px solid #8cbd25; }
+
+#confirm.feature input#no {padding: 6px 10px 6px 10px; background: #d60e18; border-radius: 5px; color: #fff; text-decoration: none; border: 1px solid #b00811;}
+
+#confirm.feature input#no:hover {padding: 6px 10px 6px 10px; background: #94080f; border-radius: 5px; color: #fff; text-decoration: none; border: 1px solid #b00811;}
+
+
+/* Team */
+
+.team img {max-width: 200px;}
+
+.team td {padding: 10px; vertical-align: top; border-bottom: 1px solid #111;}
+
+.team {border: 0px;}
+
+table thead th, table tbody td, table tr td {border-top: 0px;}
+
+
+.form_error_wrap {display: none;}
+.defaultForm {
+  width: 100%;
+  *zoom: 1;
+  padding: 20px;
+  background: #666666;
+}
+.defaultForm:before, .defaultForm:after {
+  content: " ";
+  display: table;
+}
+.defaultForm:after {
+  clear: both;
+}
+.defaultForm .inputset {
+  display: block;
+  width: 100%;
+  position: relative;
+  float: left;
+  margin-bottom: 0.625em;
+}
+.defaultForm .inputset .form_error_specific {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: Tomato;
+}
+.defaultForm .inputset label {
+
+  font-family: calibri,sans-serif; font-size: 14px;
+color: #fff;
+  width: 100%;
+}
+.defaultForm .inputset label.label {
+  display: inline-block;
+}
+.defaultForm .inputset label.label input {
+  width: initial;
+  display: inline-block;
+  margin-left: 0.625em;
+}
+.defaultForm .inputset input, .defaultForm .inputset textarea, .defaultForm .inputset select {
+  display: block;
+  width: 100%;
+  padding: 0.625em;
+  width: 100%;
+}
+.defaultForm .inputset textarea {
+  height: 10.625em;
+}
+
+.inputset.inputsetcheck label:first-of-type {
+  margin-bottom: 0.3125em;
+  padding-bottom: 0.3125em;
+  border-bottom: 1px solid #cccccc;
+}
+.inputset label.form_header {
+  font-weight: bold;
+  font-size: 18px;
+}
+.defaultForm .form_submit {
+
+}
+.defaultForm .form_submit .fbElementButton {
+  display: inline-block;
+  padding: 0.5em 1.5625em;
+  background-color: #000;
+  border: 0;
+  color: white;
+  border-radius: 5px;
+}
+.defaultForm .form_submit .fbElementButton:hover {
+  background-color: #333;
+}
+
+
+.dropdown-plans {width: 75%; display: inline-block; vertical-align: middle; }
+
+.dropdown-plans select {width: 99%;}
+.button-plans {width:20%; display: inline-block; vertical-align: middle; }
